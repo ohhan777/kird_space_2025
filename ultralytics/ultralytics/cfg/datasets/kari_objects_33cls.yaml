@@ -1,0 +1,47 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# KARI objects 33 classes
+# Example usage: yolo train model=yolov8n-obb.pt data=kari_objects_33cls.yaml
+# parent
+# ├── ultralytics/datasets/kari_objects_33cls
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ./kari_objects_33cls # dataset root dir
+train: train/images # train images 
+val: val/images # val images 
+
+# Classes for KARI Objects - 33 classes
+names:
+  0: motorboat
+  1: sailboat
+  2: tugboat
+  3: barge
+  4: fishing boat
+  5: ferry
+  6: container ship
+  7: oil tanker
+  8: drill ship
+  9: warship
+  10: fighter aircraft
+  11: large military aircraft
+  12: small civilian aircraft
+  13: large civilian aircraft
+  14: helicopter
+  15: small vehicle
+  16: truck
+  17: bus
+  18: train
+  19: container
+  20: container group
+  21: crane
+  22: bridge
+  23: dam
+  24: storage tank
+  25: sports field
+  26: stadium
+  27: swimming pool
+  28: roundabout
+  29: helipad
+  30: wind turbine
+  31: aquaculture farm
+  32: marine research station
+
