@@ -1,0 +1,15 @@
+[project]
+name = "kari-cloud-seg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "albumentations>=2.0.8",
+    "opencv-python>=4.11.0.86",
+    "rasterio>=1.4.3",
+    "torch>=2.7.0",
+    "torchvision>=0.22.0",
+    "tqdm>=4.67.1",
+    "wandb>=0.19.11",
+]
