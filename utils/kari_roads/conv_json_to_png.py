@@ -24,6 +24,7 @@ def process_file(json_path, output_path, img_w, img_h):
         raw = props.get('building_imcoords', '') if props.get('building_imcoords', '') != 'EMPTY' else props.get('road_imcoords', '')
         if raw == 'EMPTY' or raw == '':
             continue
+        # print("raw: ", raw)
         vals = [round(float(x)) for x in raw.replace(' ', '').split(',')]
         cls_id = int(props.get('type_id', 1))
         vals = np.array(vals).reshape(-1, 2)
@@ -53,6 +54,7 @@ def main():
         rel = os.path.relpath(json_path, json_dir)
         txt_name = os.path.splitext(rel)[0] + '.png'
         out_path = os.path.join(out_base, txt_name)
+        print("json_path: ", json_path)
         process_file(json_path, out_path, args.width, args.height)
         print(f"Converted: {json_path} -> {out_path}")
 

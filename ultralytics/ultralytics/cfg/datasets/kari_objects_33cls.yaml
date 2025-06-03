@@ -2,10 +2,10 @@
 # KARI objects 33 classes
 # Example usage: yolo train model=yolov8n-obb.pt data=kari_objects_33cls.yaml
 # parent
-# ├── ultralytics/datasets/kari_objects_33cls
+# ├── ../datasets/kari_objects_33cls
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-path: ../ultralytics/datasets/kari_objects_33cls_mini # dataset root dir
+path: ../datasets/kari_objects_33cls_mini # dataset root dir
 train: train/images # train images 
 val: val/images # val images 
 
