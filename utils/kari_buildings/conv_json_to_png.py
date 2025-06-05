@@ -26,6 +26,7 @@ def process_file(json_path, output_path, img_w, img_h):
             continue
         vals = [round(float(x)) for x in raw.replace(' ', '').split(',')]
         cls_id = int(props.get('type_id', 1))
+        cls_id = 1 if cls_id >= 1 else 0
         vals = np.array(vals).reshape(-1, 2)
         png_label = cv2.fillPoly(png_label, [vals], cls_id)
     
